@@ -55,3 +55,30 @@ Em programação reativa, backpressure (ou contrapressão) é um mecanismo que i
 ## Complemento. 
 ### Manifesto Reativo 
 https://reactivemanifesto.org/
+https://github.com/reactive-streams
+
+### Reactive Streams 
+
+O Reactive Streams é uma especificação que define como trabalhar com fluxos de dados assíncronos na programação reativa, determinando como os dados devem ser produzidos, consumidos e controlados de forma eficiente.
+Essa especificação define quatro interfaces principais — Publisher, Subscriber, Subscription e Processor — que estabelecem o contrato entre produtores e consumidores de dados, permitindo o controle de fluxo (backpressure).
+Bibliotecas como o Project Reactor e o RxJava implementam essa especificação, fornecendo ferramentas práticas (como Flux e Mono) para aplicar os princípios da programação reativa em aplicações Java.
+
+* Reactive Streams → o padrão (a regra do jogo).
+* Project Reactor / RxJava → as implementações (as ferramentas que jogam conforme as regras).
+* Programação reativa → o paradigma que aplica esse modelo para lidar com dados de forma assíncrona e não bloqueante.
+
+<img width="640" height="360" alt="image" src="https://github.com/user-attachments/assets/1d44ecd0-a711-42dc-8c77-3ae373e9875b" />
+
+### Publisher:
+Representa a fonte de dados que emite informações de forma assíncrona. É responsável por produzir os elementos que serão enviados aos Subscribers quando eles se inscrevem e solicitam os dados.
+
+### Subscriber:
+Representa o consumidor de dados, que recebe e reage aos elementos emitidos pelo Publisher. Ele define como processar cada item recebido e controla o ritmo de consumo solicitando mais dados conforme sua capacidade.
+
+### Susbcription :
+Atua como o elo de ligação entre o Publisher e o Subscriber. Permite que o Subscriber controle o fluxo de dados, solicitando quantos elementos deseja (request(n)) ou cancelando o recebimento (cancel()), garantindo o backpressure (pressão reversa).
+
+### Processsor :
+É um componente intermediário e flexível, que combina o papel de Subscriber e Publisher. Ele recebe dados, processa ou transforma conforme a necessidade e, em seguida, emite novos dados para outros Subscribers, formando cadeias reativas.
+
+
