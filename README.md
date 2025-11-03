@@ -46,6 +46,9 @@ Capacidade de um programa continuar a execução sem ser bloqueado por uma outra
 
 ### Backpressure: 
 Mecanismo de controle para lidar com a discrepância de velocidade entre a produção e consumo de dados.
+Em programação reativa, backpressure (ou contrapressão) é um mecanismo que impede que um produtor de dados envie dados mais rápido do que o consumidor consegue processar, evitando sobrecarga, perda de dados e falhas no sistema. Ele permite que o consumidor sinalize ao produtor a sua capacidade de processamento e controle a vazão, mantendo o fluxo de dados equilibrado e eficiente. 
+
+### Programção funcional vs Programação não funcional 
 
 <img width="1347" height="898" alt="image" src="https://github.com/user-attachments/assets/1cbe0de2-2079-4348-a540-74e113633fc9" />
 
