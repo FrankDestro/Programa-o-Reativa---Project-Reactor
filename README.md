@@ -82,3 +82,7 @@ Atua como o elo de ligação entre o Publisher e o Subscriber. Permite que o Sub
 É um componente intermediário e flexível, que combina o papel de Subscriber e Publisher. Ele recebe dados, processa ou transforma conforme a necessidade e, em seguida, emite novos dados para outros Subscribers, formando cadeias reativas.
 
 
+<img width="1867" height="941" alt="image" src="https://github.com/user-attachments/assets/586085eb-4bf5-457d-bdd2-0d7561995da7" />
+
+
+
